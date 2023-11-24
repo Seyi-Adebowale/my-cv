@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <script
+      src="https://kit.fontawesome.com/6b219ab309.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Seyi Adebowale CV</title>
+  </head>
+  <body>
+    <section class="intro" id="intro">
+      <header id="header">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="Company Logo" />
+            </a>
+          </div>
+          <nav id="navlinks" class="nav-menu">
+            <i
+              class="menu-icon fas fa-times d-md-none"
+              onclick="hideMenu()"
+            ></i>
+            <ul>
+              <li><a href="#intro">Home</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#projects">Certifications</a></li>
+            </ul>
+
+            <div class="download-button">
+              <a
+                href="img/Oluwaseyi Adebowale CV.pdf"
+                download
+              >
+                <button class="download-cv">Download CV</button>
+              </a>
+            </div>
+          </nav>
+          <i class="menu-icon fas fa-bars d-md-none" onclick="showMenu()"></i>
+        </div>
+      </header>
+
+      <div class="hero">
+        <div class="hero-container">
+          <div class="hero-text-container">
+            <div class="hero-text">
+              <h1>I'm <span class="name">Seyi Adebowale</span></h1>
+              <h3>Front End Web Developer</h3>
+              <p>
+                I am dedicated to finding innovative solutions to complex
+                technical challenges and driving business success through
+                cutting-edge technology solutions.
+              </p>
+              <a href="#footer" class="hire-me">Hire Me</a>
+            </div>
+          </div>
+
+          <div class="hero-img swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/hero-img.png" alt="image1" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/hero-img2.png" alt="image2" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/hero-img3.png" alt="image3" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/hero-img4.png" alt="image4" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/hero-img5.png" alt="image5" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education section" id="education">
+      <h2 class="heading">Education</h2>
+      <div class="education-item">
+        <div class="education-details">
+          <h3>
+            <i class="fas fa-graduation-cap fa-lg"></i>
+            B.Sc Computer Science
+          </h3>
+          <div class="edu-section">
+            <p>
+              <i class="fas fa-university"></i> Federal University of
+              Agriculture, Abeokuta
+            </p>
+            <p><i class="fas fa-map-marker-alt"></i> Ogun State, Nigeria</p>
+          </div>
+          <div class="edu-section">
+            <p><i class="fas fa-calendar"></i> 2016-2021</p>
+            <p><i class="fas fa-star"></i> CGPA: 4.05 / 5.0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <h2 class="heading">Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-bootstrap"></i>
+          <p>Bootstrap</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-git-alt"></i>
+          <p>Git</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <h2 class="heading">Experience</h2>
+      <div class="jobs-container">
+        <div class="job">
+          <div class="job-details">
+            <h3><i class="fas fa-user"></i> Head of IT Operations</h3>
+            <p><i class="fas fa-building"></i> Flower House Crèche Care</p>
+            <p><i class="fas fa-map-marker-alt"></i> Lagos State, Nigeria</p>
+            <p><i class="fas fa-calendar"></i> Jan. 2016 – ongoing</p>
+            <ul>
+              <li>
+                <i class="fas fa-check"></i> Responsible for the organisation’s
+                online presence including management of social media pages which
+                has greatly driven customer traffic.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Revamped the manual collation of
+                kids’ result sheets and staff timesheet to a digitalized
+                computation using spreadsheet program.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Designed a series of multimedia
+                presentations to familiarize parents with the organisation’s
+                activities.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Designed banners, fliers, and video
+                ads.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Maintained, repaired, and replaced
+                computer systems and components.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-details">
+            <h3><i class="fas fa-user"></i> Tech Instructor</h3>
+            <p><i class="fas fa-building"></i> ICTinSchool</p>
+            <p><i class="fas fa-map-marker-alt"></i> Oyo State, Nigeria</p>
+            <p><i class="fas fa-calendar"></i> August 2022</p>
+            <ul>
+              <li>
+                <i class="fas fa-check"></i> Trained students on the use of
+                Pictoblox – An AI-enabled graphical coding platform.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Supervised students to build a
+                chatbot and face filter project using Pictoblox.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-details">
+            <h3><i class="fas fa-user"></i> IT Support Intern</h3>
+            <p><i class="fas fa-building"></i> Nichemtex Limited</p>
+            <p><i class="fas fa-map-marker-alt"></i> Lagos State, Nigeria</p>
+            <p><i class="fas fa-calendar"></i> Oct. 2019 – Mar. 2020</p>
+            <ul>
+              <li>
+                <i class="fas fa-check"></i> Received, lodged, and resolved
+                IT-related complaints from various departments in the company
+                (Helpdesk).
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Maintained, repaired, and replaced
+                computer systems and components.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Updated records of staff in the
+                company's database.
+              </li>
+              <li>
+                <i class="fas fa-check"></i> Handled inventory control documents
+                and reports generated by the IT department.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <h2 class="heading">Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <img src="img/project1.png" alt="Project 1 Screenshot" />
+          <div class="project-description">
+            <p>Flower House Creche Care</p>
+            <div class="stack-icons">
+              <i class="fab fa-html5" title="HTML"></i>
+              <i class="fab fa-css3-alt" title="CSS"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+              <i class="fab fa-php" title="PHP"></i>
+            </div>
+          </div>
+          <a
+            href="https://www.flowerhousecrechecare.com.ng"
+            class="view-site-btn"
+            target="_blank"
+            >View Site</a
+          >
+        </div>
+
+        <div class="project">
+          <img src="img/project2.png" alt="Project 2 Screenshot" />
+          <div class="project-description">
+            <p>LKO Foods</p>
+            <div class="stack-icons">
+              <i class="fab fa-html5" title="HTML"></i>
+              <i class="fab fa-css3-alt" title="CSS"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-php" title="PHP"></i>
+              <i class="fas fa-database"></i>
+            </div>
+          </div>
+          <a
+            href="https://www.lkofoods.com"
+            target="_blank"
+            class="view-site-btn"
+            >View Site</a
+          >
+        </div>
+
+        <div class="project">
+          <img src="img/project3.png" alt="Project 3 Screenshot" />
+          <div class="project-description">
+            <p>Career and Consult</p>
+            <div class="stack-icons">
+              <i class="fab fa-html5" title="HTML"></i>
+              <i class="fab fa-css3-alt" title="CSS"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+            </div>
+          </div>
+          <a
+            href="https://www.careerandconsult.ng"
+            class="view-site-btn"
+            target="_blank"
+            >View Site</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications section" id="certifications">
+      <h2 class="heading">Certifications</h2>
+      <div class="certifications-container">
+        <div class="certification">
+          <i class="fas fa-certificate"></i>
+          <p>
+            Certificate of Proficiency in Information Systems Management (in
+            view)
+          </p>
+          <span>APTECH Nigeria (Asolo Branch)</span>
+        </div>
+
+        <div class="certification">
+          <i class="fas fa-certificate"></i>
+          <p>Certificate in Responsive Web Design</p>
+          <span>freeCodeCamp.org</span>
+        </div>
+
+        <div class="certification">
+          <i class="fas fa-certificate"></i>
+          <p>Graduate Member</p>
+          <span>Computer Professionals of Nigeria</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <h2>Contact Me</h2>
+      <div class="contact-icons">
+        <a href="tel:+2347062367015">
+          <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://wa.me/+2347062367015" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto: seyibowale15@gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/seyiadebowale" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <div class="footer-text">
+        <p class="copyright">&#169; Seyi Adebowale</p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
