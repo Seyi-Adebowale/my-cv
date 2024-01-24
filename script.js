@@ -7,18 +7,18 @@ function hideMenu() {
 }
 
 
-var swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  autoplay: {
-      delay: 3000,
-      disableOnInteraction: false, 
-    },
-});
+// var swiper = new Swiper('.swiper', {
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   autoplay: {
+//       delay: 3000,
+//       disableOnInteraction: false, 
+//     },
+// });
 
 document.addEventListener("DOMContentLoaded", function() {
   var header = document.getElementById("header");

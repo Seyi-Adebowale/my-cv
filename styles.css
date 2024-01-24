@@ -420,10 +420,19 @@ a.hire-me {
 .project:hover img {
   opacity: 0.8;
 }
-.project p {
-  font-size: 2.5rem;
+.project h3 {
+  font-size: 2.3rem;
   text-align: center;
   color: var(--color-red);
+}
+.project p{
+  font-size: 1.6rem;
+  text-align: justify;
+  padding: 0 10px;
+  color: var(--color-black);
+}
+.stack-icons{
+  margin-bottom: 60px;
 }
 .view-site-btn {
   display: block;
@@ -434,6 +443,9 @@ a.hire-me {
   text-decoration: none;
   border-radius: 5px;
   font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .stack-icons i {
   font-size: 4rem;
