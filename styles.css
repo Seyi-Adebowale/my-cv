@@ -174,7 +174,6 @@ a.hire-me:hover,
   display: flex;
   height: 86vh;
   width: 100%;
-  /* outline: 1px solid blue; */
   justify-content: space-around;
   margin: auto;
 }
@@ -190,20 +189,14 @@ a.hire-me:hover,
 .hero-img {
   width: 40%;
   position: relative;
-  /* outline: 1px solid red; */
 }
 .hero-img img {
   width: 100%;
-  /* height: 100%; */
   position: absolute;
   bottom: 0;
-  /* outline: 1px solid black; */
   align-self: center;
   text-align: center;
   margin: auto;
-  /* outline: 1px solid purple; */
-}
-.hero-img_img {
 }
 .hero-text h1 {
   font-size: 5.7rem;
