@@ -26,10 +26,11 @@ i {
   background-image: url("img/white-abstract-wallpaper_23-2148830026.avif");
   background-size: cover;
   background-position: center;
+  height: 98vh;
 }
 header {
   padding: 10px;
-  height: 80px;
+  height: 12vh;
   z-index: 99;
 }
 .fixed {
@@ -171,8 +172,9 @@ a.hire-me:hover,
 }
 .hero-container {
   display: flex;
-  height: 100%;
+  height: 86vh;
   width: 100%;
+  /* outline: 1px solid blue; */
   justify-content: space-around;
   margin: auto;
 }
@@ -187,15 +189,21 @@ a.hire-me:hover,
 }
 .hero-img {
   width: 40%;
-  text-align: center;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative;
+  /* outline: 1px solid red; */
 }
 .hero-img img {
-  max-width: 73%;
+  width: 100%;
+  /* height: 100%; */
+  position: absolute;
+  bottom: 0;
+  /* outline: 1px solid black; */
   align-self: center;
+  text-align: center;
+  margin: auto;
+  /* outline: 1px solid purple; */
+}
+.hero-img_img {
 }
 .hero-text h1 {
   font-size: 5.7rem;
@@ -255,14 +263,24 @@ a.hire-me {
   }
   .hero-img {
     width: 85%;
-    height: 55%;
+    height: 100%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .hero-img img {
     height: 100%;
+    width: 65%;
   }
   .hero-text:last-child {
     text-align: center;
+  }
+}
+@media screen and (max-width: 600px){
+  .hero-img img {
+    height: 100%;
+    width: 85%;
   }
 }
 .swiper {
@@ -425,13 +443,13 @@ a.hire-me {
   text-align: center;
   color: var(--color-red);
 }
-.project p{
+.project p {
   font-size: 1.6rem;
   text-align: justify;
   padding: 0 10px;
   color: var(--color-black);
 }
-.stack-icons{
+.stack-icons {
   margin-bottom: 60px;
 }
 .view-site-btn {
