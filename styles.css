@@ -375,7 +375,6 @@ nav ul li a:hover,
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 30px;
-    outline: 1px solid green;
     margin: 0;
   }
   a.hire-me {
@@ -477,11 +476,11 @@ nav ul li a:hover,
   text-align: center;
   margin: 10px;
   width: 170px; 
-  opacity: 0; /* Initially, set the opacity to 0 */
-  transform: translateY(20px); /* Move each skill down initially */
+  opacity: 0;
+  transform: translateY(20px);/
 }
 .animate-swing {
-  animation: swingIn ease-out 0.5s forwards; /* Apply the animation */
+  animation: swingIn ease-out 0.5s forwards;
 }
 .skill p {
   font-size: 3rem;
@@ -516,11 +515,11 @@ nav ul li a:hover,
 @keyframes swingIn {
   0% {
      opacity: 0;
-     transform: translateY(20px) rotate(-10deg); /* Initial position and rotation */
+     transform: translateY(20px) rotate(-10deg);
   }
   100% {
      opacity: 1;
-     transform: translateY(0) rotate(0); /* Final position and rotation */
+     transform: translateY(0) rotate(0);
   }
 }
 /* .jobs-container {
@@ -551,7 +550,6 @@ nav ul li a:hover,
   font-size: 1.5rem;
   text-align: justify;
 } */
-
 
 .projects-container {
   display: flex;
