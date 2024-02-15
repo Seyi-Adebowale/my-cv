@@ -3,7 +3,7 @@ function showMenu() {
   navLinks.style.right = "0";
 }
 function hideMenu() {
-  navLinks.style.right = "-800px";
+  navLinks.style.right = "-1500px";
 }
 
 // var swiper = new Swiper('.swiper', {
