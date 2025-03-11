@@ -32,6 +32,10 @@ header {
   height: 12vh;
   z-index: 99;
 }
+html {
+  scroll-padding-top: 13vh;
+}
+
 .fixed {
   position: fixed;
   top: 0;
@@ -41,7 +45,7 @@ header {
 .navbar {
   display: flex;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 60px;
   justify-content: space-between;
 }
 nav {
@@ -64,7 +68,8 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
   margin: 0;
   width: 77%;
   text-align: left;
@@ -112,7 +117,7 @@ nav ul li a:hover,
   background-color: var(--color-white);
   box-shadow: 0 4px 8px var(--color-red);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   nav {
     position: absolute;
     z-index: 99;
@@ -164,13 +169,16 @@ nav ul li a:hover,
   .menu-icon:hover {
     color: var(--color-red);
   }
+  .navbar{
+    padding: 0 20px;
+  }
 }
 .hero {
   width: 100%;
 }
 .hero-container {
   display: flex;
-  height: 86vh;
+  height: 88vh;
   width: 100%;
   justify-content: space-around;
   margin: auto;
@@ -179,6 +187,7 @@ nav ul li a:hover,
   position: relative;
   width: 45%;
   margin: auto;
+  padding-left: 35px;
 }
 .hero-text-heading {
   animation: slideInTop 1s ease-out 0.8s backwards;
@@ -371,6 +380,7 @@ nav ul li a:hover,
   .hero-text-container {
     width: 85%;
     margin: auto;
+    padding-left: 0px;
   }
   .hero-img {
     width: 80%;
@@ -452,18 +462,41 @@ nav ul li a:hover,
   margin-top: 30px;
   text-align: center;
 }
+.main-skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  row-gap: 35px;
+}
 .skills-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 40px;
+  padding: 0 20px;
+}
+
+.skill-level{
+  font-size: 20px;
+}
+.skill-category{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .skill {
   text-align: center;
-  margin: 10px;
-  width: 170px; 
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%; 
   opacity: 0;
-  transform: translateY(20px);/
+  transform: translateY(20px);
 }
 .animate-swing {
   animation: swingIn ease-out 0.5s forwards;
@@ -486,16 +519,16 @@ nav ul li a:hover,
 .fab.fa-bootstrap {
   color: #7952b3;
 }
-.fab.fa-git-alt {
+.fab.fa-wordpress {
   color: #f05032;
 }
 .fab.fa-php {
   color: #8892bf;
 }
-.fab.fa-database {
+.fas.fa-database {
   color: #00758f;
 }
-.fab.fa-sass {
+.fab.fa-react {
   color: #cc6699;
 }
 @keyframes swingIn {
@@ -541,15 +574,17 @@ nav ul li a:hover,
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0 40px;
 }
 .project {
-  width: 350px;
-  min-width: 310px;
+  max-width: 350px;
+  width: 100%;
   text-align: center;
-  margin: 20px;
+  margin: 20px auto;
   background-color: var(--color-white);
   border-radius: 8px;
-  box-shadow: 0 4px 4px var(--color-red);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
   cursor: pointer;
   position: relative;
 }
@@ -595,12 +630,21 @@ nav ul li a:hover,
   font-size: 4rem;
   margin: 0 5px;
 }
+@media (max-width: 400px){
+  .skills-container{
+    flex-wrap: wrap;
+  }
+  .projects-container{
+    padding: 0 20px;
+  }
+}
 .certifications-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 20px;
+  padding: 0 40px;
 }
 .certification {
   display: flex;
@@ -629,6 +673,7 @@ nav ul li a:hover,
 }
 .footer h2 {
   text-align: center;
+  font-size: 18px;
 }
 .contact-icons a {
   text-decoration: none;
