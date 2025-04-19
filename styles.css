@@ -221,6 +221,11 @@ nav ul li a:hover,
   margin: 10px 0;
   text-align: left;
 }
+@media (max-width: 480px){
+  .hero-text h1{
+    font-size: 4.5rem;
+  }
+}
 .name {
   color: var(--color-red);
   letter-spacing: 1.5px;
@@ -232,6 +237,7 @@ nav ul li a:hover,
   margin: 0;
   text-align: left;
 }
+
 .hero-text p {
   text-align: justify;
   font-size: 2.2rem;
@@ -434,6 +440,11 @@ nav ul li a:hover,
   text-transform: uppercase;
   text-align: center;
 }
+@media (max-width: 480px){
+  .heading{
+    font-size: 3rem;
+  }
+}
 .education-item {
   margin-bottom: 20px;
 }
@@ -446,6 +457,10 @@ nav ul li a:hover,
 .education-item p {
   font-size: 2rem;
   margin-bottom: 3px;
+}
+.education-details{
+  padding: 0 10px;
+  text-align: center;
 }
 .education-details i {
   margin-right: 10px;
@@ -561,6 +576,7 @@ nav ul li a:hover,
   justify-content: space-around;
   padding: 20px 40px;
   row-gap: 40px;
+  margin-top: 30px;
 }
 .project {
   max-width: 350px;
@@ -672,7 +688,9 @@ nav ul li a:hover,
 .contact-icons {
   display: flex;
   justify-content: space-around;
-  width: 250px;
+  width: 90%;
+  flex-wrap: wrap;
+  max-width: 250px;
   margin: 0 auto;
 }
 .contact-icons i {
